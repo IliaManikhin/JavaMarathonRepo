@@ -13,7 +13,7 @@ public class Task3 {
 		int index = 0;
 		for(int i=0; i<numbers.length; i++) {
 			for(int j = 0; j<numbers[i].length; j++) {
-				numbers[i][j] = (int)(random.nextInt(50));
+				numbers[i][j] = (random.nextInt(51));
 				
 				 System.out.print(numbers[i][j] +"," + "\t");
 
@@ -28,18 +28,19 @@ public class Task3 {
 			for(int j=0; j<numbers[i].length; j++) {
 				
 				sumMax = sum + numbers[i][j] ;
-//				sum = sum + numbers[i][j];
-				index = numbers[i][j];
+				
+				
 				if (sumMax >= sum ) {
-					sum = sumMax;
 					index = numbers[i][j];
+					
 				}
 				
-				System.out.print("Summa strok " + sumMax);
 				
+				System.out.println(sum);
 			}
-			System.out.println();
-			
+			System.out.println( "Index" + index);
+			sum = sumMax;
+			System.out.print("Summa strok " + sum);
 		}
 		
 	}
