@@ -6,7 +6,7 @@ public class Task33 {
 
 	public static void main(String[] args) {
 		
-		int[][] array = new int[2][3];
+		int[][] array = new int[5][4];
 		
 		for(int i = 0; i<array.length; i++) {
 			for(int j = 0; j<array[i].length; j++) {
@@ -17,7 +17,7 @@ public class Task33 {
 		
 		int sumString = 0;
 		int sumMax = 0;
-		
+		int sumFinal = 0;
 		for(int i = 0; i<array.length; i++) {
 			for(int j = 0; j<array[i].length; j++) {
 				sumString = sumString + array[i][j];
@@ -27,11 +27,14 @@ public class Task33 {
 			if (sumString > sumMax ) {
 				sumMax = sumString;
 				
+			} else if (sumString >= sumMax) {
+				sumMax = sumString;
 			}
 			
+			
 		}
-			System.out.println(sumMax);
-//			System.out.println(Arrays.deepToString(array));
+//			System.out.println(sumMax);
+			System.out.println(Arrays.deepToString(array));
 			
 		
 

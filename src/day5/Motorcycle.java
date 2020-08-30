@@ -6,14 +6,14 @@ public class Motorcycle {
 	private String color;
 	private String model;
 	
-	
-	public Motorcycle () {
-		
-		this.year = 1940;
-		this.color = "black";
-		this.model = "Harley-Davidson";
-		System.out.println(year + " , " +  color + " , " + model );
+	public Motorcycle(int year, String color, String model) {
+		this.year = year;
+		this.color = color;
+		this.model = model;
 	}
+	
+	
+	
 	
 	
 

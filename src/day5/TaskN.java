@@ -5,8 +5,8 @@ public class TaskN {
 	public static void main(String[] args) {
 	
 		//Экземпляры объектов
-		Motorcycle bike1 = new Motorcycle();  
-		TaskOneAutomobile car1 = new TaskOneAutomobile();
+		Motorcycle bike1 = new Motorcycle(1940, "black", "Harley-Davidson");  
+		Automobile car1 = new Automobile();
 	
 		
 		car1.setYear(2000);
