@@ -24,10 +24,10 @@ public class Jet {
 		this.length = length;
 	}
 
-	public int fillUp(int gettingFuel) {
+	public void fillUp(int gettingFuel) {
 		this.fuel += gettingFuel;
 		
-		return fuel;
+		
 	}
 	
 	public void info () {
