@@ -9,55 +9,33 @@ public class Player {
 	private static final int MAX_STAMINA = 100;
 	private static final int MIN_STAMINA = 0;
 	private static int countPlayers = 0;
-	private static int fieldPlayers = 6;
-	
-	
+		
 	public Player (int stamina) {
 		this.stamina = stamina;
-		
-		   countPlayers ++;
+		if (countPlayers < 6) {
+		   countPlayers ++;}
+		   	
 	}
 	
 	public  void run() {
-		while (stamina > MIN_STAMINA ) {
+		if (stamina == 0) {
+			return;
+		}
 			stamina--;
-		}
-		countPlayers--;
-		countPlayers++;
-//		System.out.println(countPlayers);
+			
+			if(stamina == 0) {
+				countPlayers--;
+			}
 	}
 	
-	public void info () {
-		
-		fieldPlayers = fieldPlayers - countPlayers;
-		
+	public static void info () {
+				
 		if ( countPlayers < 6) {
-			System.out.println("Команды неполные, еще есть " + fieldPlayers + " свободных мест");
-		} else if ( countPlayers >= 7) {
-			countPlayers = 6;
-		} else {
-			System.out.println("Мест в команде больше нет");
+			System.out.println("Команды неполные, еще есть " + (6 - countPlayers) + " свободных мест");
+		}  else {
+			System.out.println("Мест в командах больше нет");
 		}
 	}
+		
 	
-	
-	
-//	public void setStamina(int stamina) {
-//	
-//		int a=90;
-//		int b=100;
-//
-//		this.stamina  =  a +  rand.nextInt(b - a + 1);
-//		
-//		this.stamina = stamina;
-//	}
-//	
-//	public int getStamina() {
-//		return stamina;
-//	}
-
-
-	
-	
-
 }

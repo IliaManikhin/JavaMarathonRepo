@@ -1,6 +1,6 @@
 package day8;
 
-public class TaskN {
+public class Task2 {
 
 	public static void main(String[] args) {
 		

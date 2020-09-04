@@ -13,19 +13,24 @@ public class TaskN {
 		Player p2 = new Player(96);
 		Player p3 = new Player(90);
 		Player p4 = new Player(95);
+		
+		Player.info();
+		
 		Player p5 = new Player(99);
 		Player p6 = new Player(100);
 		
-		p1.info();
+		Player.info();
 		
+		Player p7 = new Player(99);
+		Player p8 = new Player(100);
 		
-		p1.run();
-//		p2.run();
-//		p3.run();
-//		p4.run();
-//		p5.run();
-//		p6.run();
-
+		Player.info();
+		
+		for(int i =0; i<100; i++)
+		p6.run();
+		
+		Player.info();
+		
 	}
 
 }

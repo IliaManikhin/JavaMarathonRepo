@@ -37,7 +37,7 @@ public class Airplane {
 	
 	// Переопределяем метод toString 
 	public String toString () {
-		return manufacturer + ", " + year + ", " + length + ", " + weight;
+		return "Изготовитель: " + manufacturer + ", год выпуска: " + year + ", длина: " + length + ", вес: " + weight + ", объем топлива в баке: " + fuel;
 	}
 
 }
