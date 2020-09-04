@@ -6,8 +6,8 @@ public class Picker implements Worker{
 	private Warehouse warehouse;
 	
 	
-	public Picker() {
-		
+	public Picker(Warehouse warehouse) {
+		this.warehouse = warehouse;
 	}
 	
 	
@@ -19,30 +19,33 @@ public class Picker implements Worker{
 		this.salary = salary;
 	}
 	
-	
-
-	public Warehouse getWarehouse() {
-		return warehouse;
-	}
-
-
-	public void setWarehouse(Warehouse warehouse) {
-		this.warehouse = warehouse;
-	}
-
 
 	@Override
 	public void doWork () {
+		
 		this.salary = salary + 80;
-		warehouse.setCountOrder(); 
+//		System.out.println("получена ЗП :" + this.salary);
+		
+//		for (int i = 0; i<1501; i++)
+		warehouse.setCountOrder(warehouse.getCountOrder()+1);
+		
 		
 	}
 
 	@Override
 	public void bonus() {
-		// TODO Auto-generated method stub
-		
+		if (warehouse.getCountOrder() > 1500) {
+			this.salary = salary * 3; 
+		}
 	}
+
+
+	@Override
+	public String toString() {
+		return "Picker зарплата = " + salary;
+	}
+	
+	
 	
 	
 

@@ -9,8 +9,9 @@ public class Warehouse {
 	
 	
 
-	public Warehouse(int countOrder) {
+	public Warehouse(int countOrder, int balance) {
 		this.countOrder = countOrder;
+		this.balance = balance;
 	}
 
 	public int getCountOrder() {
@@ -31,7 +32,7 @@ public class Warehouse {
 	
 	@Override
 	public String toString() {
-		return "Warehouse [countOrder=" + countOrder + ", balance=" + balance + "]";
+		return "Заказов на складе : countOrder=" + countOrder + ", Баланс = " + balance ;
 	}
 	
 }
