@@ -6,39 +6,39 @@ public class Task1 {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-		
-		while(true) {
-			System.out.println("Введите название города:");
-			String city = sc.nextLine();
-			
-			switch(city) {
-			case "Москва":
-			case "Владивосток":
-			case "Ростов":
-				System.out.println("Россия");
-				break;
-			case "Рим":
-			case "Милан":
-			case "Турин":
-				System.out.println("Италия");
-				break;
-			case "Ливерпуль":
-			case "Манчестер":
-			case "Лондон":
-				System.out.println("Англия");
-				break;
-			case "Берлин":
-			case "Мюнхен":
-			case "Кёльн":
-				System.out.println("Германия");
-				break;
-				default:
-					System.out.println("Неизвестная страна");
-			}
-			
-			if (city.contentEquals("Stop")) break;
-		}
+//		Scanner sc = new Scanner(System.in);
+//
+//		while(true) {
+//			System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:");
+//			String city = sc.nextLine();
+//
+//			switch(city) {
+//			case "пїЅпїЅпїЅпїЅпїЅпїЅ":
+//			case "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ":
+//			case "пїЅпїЅпїЅпїЅпїЅпїЅ":
+//				System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅ");
+//				break;
+//			case "пїЅпїЅпїЅ":
+//			case "пїЅпїЅпїЅпїЅпїЅ":
+//			case "пїЅпїЅпїЅпїЅпїЅ":
+//				System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅ");
+//				break;
+//			case "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ":
+//			case "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ":
+//			case "пїЅпїЅпїЅпїЅпїЅпїЅ":
+//				System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅ");
+//				break;
+//			case "пїЅпїЅпїЅпїЅпїЅпїЅ":
+//			case "пїЅпїЅпїЅпїЅпїЅпїЅ":
+//			case "КёпїЅпїЅпїЅ":
+//				System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+//				break;
+//				default:
+//					System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ");
+//			}
+//
+//			if (city.contentEquals("Stop")) break;
+//		}
 
 	}
 
